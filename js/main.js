@@ -42,7 +42,7 @@
             let tempArr = ARTS.filter(artItem => artItem.highlight === true);
             return tempArr.map((element) => {
                 return `
-            <div class="highlighted_art_article">
+            <div class="highlighted_art_article dynamic_article">
             <img src="static/img/art/afbeeldingen/${element.images[0]}" alt="hihglighted art image" loading="lazy">
             <p class="gray_sub_title">${element.tags.join('/')} — ${element.location}</p>
             <h2>${element.title}</h2>
@@ -56,7 +56,7 @@
             let tempArr = ATELIER.slice(0, 3);
             return tempArr.map((element) => {
                 return `
-            <div class="highlighted_atelier_article">
+            <div class="highlighted_atelier_article dynamic_article">
             <img src="static/img/atelier/${element.images[0]}" alt="highlighted atelier image" loading="lazy">
             <p class="gray_sub_title">${element.subtitle}</p>
             <h2>${element.title}</h2>
@@ -70,7 +70,7 @@
             let tempArr = ATELIER;
             return tempArr.map((element) => {
                 return `
-            <div class="atelier_article">
+            <div class="atelier_article dynamic_article">
             <img src="static/img/atelier/${element.images[0]}" alt="atelier image" loading="lazy">
             <p class="gray_sub_title">${element.subtitle}</p>
             <h2>${element.title}</h2>
@@ -84,7 +84,7 @@
             let tempArr = PRESS.filter(pressItem => pressItem.type === "press release");
             return tempArr.map((element) => {
                 return `
-            <div class="press_release_article">
+            <div class="press_release_article dynamic_article">
             <img src="static/img/press/${element.images}" alt="press image" loading="lazy">
             <p class="gray_sub_title">${element.subtitle}</p>
             <h2>${element.title}</h2>
@@ -98,7 +98,7 @@
             let tempArr = PRESS.filter(pressItem => pressItem.type === "in the press");
             return tempArr.map((element) => {
                 return `
-            <div class="in_the_press_article">
+            <div class="in_the_press_article dynamic_article">
             <img src="static/img/press/${element.images}" alt="press image" loading="lazy">
             <p class="gray_sub_title">${element.subtitle}</p>
             <h2>${element.title}</h2>

@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'moderatlight';
-    src: url('moderat-light-webfont.woff2') format('woff2'),
-         url('moderat-light-webfont.woff') format('woff');
+    src: url('../fonts/Moderat/moderat-light-webfont.woff2') format('woff2'),
+         url('../fonts/Moderat/moderat-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    
 }
 
 
@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'moderatregular';
-    src: url('moderat-regular-webfont.woff2') format('woff2'),
-         url('moderat-regular-webfont.woff') format('woff');
+    src: url('../fonts/Moderat/moderat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Moderat/moderat-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -25,7 +25,7 @@
     padding: 0;
     font-family: 'moderatlight', sans-serif;
 }
-
+/* header */
 header {
     display: flex;
     justify-content: space-between;
@@ -46,7 +46,7 @@ header ul li{
 header a{
     text-decoration: none;
     color: black;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'moderatregular', sans-serif;
     font-weight: 500;
 }
@@ -62,9 +62,320 @@ header a img {
 header .logo {
     font-weight: 600;
 }
-.footer_and_social{
-    border-top: 1px solid rgb(170, 170, 170);
+/* main */
+
+.flex {
+    display: flex;
+    flex-direction: column ;
+}
+
+main h1 {
+    font-family: 'moderatregular', sans-serif;
+    font-weight: 400;
+    font-size: 1.9rem;
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+main a {
+    color:black;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    font-family: 'moderatregular', sans-serif;
+    font-weight: 500;
+}
+
+.index_highlighted_container {
+    padding-top: 100px;
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.highlighted_container_title {
+    padding-bottom: 30px;
+}
+
+.dynamic_load img {
     width: 100%;
+    padding-bottom: 20px;
+}
+
+.gray_sub_title {
+    color: gray;
+    font: 1rem;
+    padding-bottom: 5px;
+}
+
+.dynamic_article p{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.dynamic_article {
+    padding-bottom: 40px;
+}
+
+
+.highlighted_container_sublink {
+    color: blue;
+    border: none;
+    font-size: 0.8rem;
+    font-family: 'moderatregular', sans-serif;
+    font-weight: 400;
+
+}
+
+a:hover {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.text_and_link a {
+    font-size: 1rem;
+    border: none;
+}
+
+
+.text_and_link a:hover {
+    border-bottom: 2px solid blue;
+}
+
+
+/* index main */
+main .header_paragraph {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-top: 20px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+main .header_paragraph p{
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-family: 'moderatregular', sans-serif;
+    font-weight: 400;
+}
+
+.highlighted_art_article h2{
+    padding-bottom: 10px;
+
+}
+
+.index_crane_article {
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.index_crane_article img {
+    width: 95%;
+    padding-bottom: 50px;
+}
+
+.index_crane_article h2 {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    padding-bottom: 10px;
+}
+
+.index_crane_article .text_and_link {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.index_crane_article p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+    padding-bottom: 10px;
+}
+
+/* atelier */
+
+.Atelier_main_header {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.Atelier_main_header p {
+    font-size: 1rem;
+    padding-top: 10px;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+/* main anomaly */
+
+.anomaly {
+    padding-top: 40px;
+}
+
+/* biography */
+
+.biography_page_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.biography_page_wrapper .bio_img_0 {
+    width: 95%;
+    max-width: 1000px;
+}
+
+.stick_left h1 {
+    padding-bottom: 20px;
+}
+
+.stick_left p {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.centered_bio {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8rem;
+    padding: 40px 0 ;
+}
+
+.bio_set {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.bio_set img {
+    padding: 0;
+    width: 100%;
+}
+
+.bio_set p {
+    text-align: right;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 0 40px 0;
+}
+
+.stick_left {
+    padding-bottom: 140px;
+}
+
+.yt_video_biography {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.reverse_flex_start{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1350px;
+}
+
+.reverse_flex_start img{
+    padding-bottom: 15px;
+}
+
+.reverse_flex_start p{
+    padding-bottom: 60px;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+.biography_quote{
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+.biography_quote:last-of-type {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+
+.centered_bio_2{
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.centered_bio_2 h2{
+    padding-bottom: 20px;
+}
+
+
+.centered_bio_2 p{
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+}
+
+.biography_flex_2 {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1350px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.bio_img_4 {
+    padding-bottom: 20px;
+}
+
+.biography_flex_1{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1350px;
+}
+
+
+.text_container_biography h2 {
+    padding: 20px 0;
+}
+
+.text_container_biography p{
+    padding-bottom: 15px;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+}
+.bio_img_7 {
+    padding-bottom: 30px;
+}
+
+
+/* footer */
+.footer_and_social{
+    border-top: 2px solid rgb(170, 170, 170);
+    width: 100%;
+    margin-top: 150px;
     
 }
 
@@ -126,7 +437,6 @@ footer > .go_top {
 .instagram_text_box a:active {
     text-decoration: underline;
 }
-
 footer {
     background-color: #eeeeee;
     padding: 50px 5vw;
@@ -143,8 +453,9 @@ footer h2 {
     width: 80vw;
     flex-wrap: nowrap;
     border: 1px solid gray;
+    height: 30px;
     justify-content: space-between;
-    color: #eeeeee;
+    color: black;
     
 }
 .footer_email_form #email_input {
@@ -154,6 +465,7 @@ footer h2 {
     background-color: inherit;
     outline: none;
     padding-left: 5px;
+    padding-top: 4px;
 
 }
 
@@ -163,6 +475,7 @@ footer h2 {
     height: 25px;
     background-color: inherit;
     padding-right: 10px;
+    padding-top: 5px;
     text-align: right;
     color: inherit;
     transition: 0.5s ease-in-out;
