@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Official website of Arne Quinze, contemporary artist</title>
     <base href="index.html">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="static/css/main.css">
 </head>
 
 <body>
@@ -22,47 +22,58 @@
         <a href="index.html" class="logo"><img src="static/img/logo.png" alt="logo" loading="lazy"></a>
     </header>
     <main>
+        <div class="contact_header">
+            <h1>Get in touch</h1>
+            <p>Maruani Mercier Gallery is our official partner and will handle all questions regarding paintings and
+                smaller sculptures. For bigger sculptures and public installations, please contact the atelier.</p>
+        </div>
         <div class="contact_page flex">
             <div class="contact_item">
-                <h1>Get in touch</h1>
-                <p>Maruani Mercier Gallery is our official partner and will handle all questions regarding paintings and
-                    smaller sculptures. For bigger sculptures and public installations, please contact the atelier.</p>
-            </div>
-            <h3>Contact our gallery:</h3>
-            <p>Maruani Mercier Gallery
-                Avenue Louise 430
-                1050 Bruxelles, Belgium</p>
-            <a href="http://www.maruanimercier.com/">www.maruanimercier.com</a>
-            <a href="mailto:laurent@maruanimercier.com">laurent@maruanimercier.com</a>
-            <p>+32 (0) 2 512 50 10</p>
-            <div class="clock">
-                <!-- loaded in dynamically -->
+                <h3>Contact our gallery:</h3>
+                <p class="gray">Maruani Mercier Gallery<br>Avenue Louise 430<br>1050 Bruxelles, Belgium</p>
+                <a href="http://www.maruanimercier.com/">www.maruanimercier.com</a>
+                <a href="mailto:laurent@maruanimercier.com">laurent@maruanimercier.com</a>
+                <p class="address">+32 (0) 2 512 50 10</p>
+                <div class="clock address">
+                    <!-- loaded in dynamically -->
+                </div>
             </div>
             <div class="contact_item">
                 <h3>Contact our atelier/studio/press departments:</h3>
                 <a href="mailto:info@arnequinze.com">info@arnequinze.com</a>
-                <p>Please mention in your subject Atelier, Studio or Press</p>
-                <p>Atelier for general enquiries & sales artworks</p>
-                <p>Studio for photo & video content</p>
-                <p>Press for interviews</p>
-                <p>or +32 494 544 620 on weekdays between 9AM and 5PM</p>
-                <p>Arne Quinze
+                <p class="gray">Please mention in your subject Atelier, Studio or Press</p>
+                <p class="gray">Atelier for general enquiries & sales artworks</p>
+                <p class="gray">Studio for photo & video content</p>
+                <p class="gray">Press for interviews</p>
+                <p class="gray">or +32 494 544 620 on weekdays between 9AM and 5PM</p>
+                <p class="gray">Arne Quinze
                     Hooglatemweg 18
                     9830 Sint-Martens-Latem, Belgium</p>
                 <p>We look forward hearing from you!</p>
-                <div class="clock">
+                <div class="clock gray">
                     <!-- loaded in dynamically -->
                 </div>
             </div>
             <div class="contact_item">
                 <h3>Send us your question.</h3>
-                <form>
+                <form class="flex">
+                    <label for="contact">About what would you like to contact me?*</label>
+                    <select id="contact" name="contact">
+                        <option>--Please choose an option--</option>
+                        <option value="Purchase work">Purchase a work</option>
+                        <option value="Question">Question about public work</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="email">E-mail*</label>
                     <input type="email" id="email" name="email" placeholder="e-mail*">
-                    <textarea name="comment" form="usrform" placeholder="your message*"></textarea>
-                    <input type="submit" value="send8" id="send_bttn">
+
+                    <label for="comment">Message*</label>
+                    <textarea name="comment" id="comment" placeholder="your message*"></textarea>
+                    <input type="submit" value="send!" id="send_bttn">
                 </form>
             </div>
-        </div>
+            </div>
     </main>
     <div class="footer_and_social">
         <div class="socials">
@@ -119,40 +130,42 @@
         </div>
         <footer>
             <h2>Stay informed</h2>
-            <div class="footer_email_form">
+            <form class="footer_email_form">
                 <input type="email" id="email_input" name="email" placeholder="e-mail*">
                 <input type="submit" id="email_subscribe" name="submit" value="subscribe">
-            </div>
-            <div class="instagram_text_box">
-                <h2>Arne<br>Quinze</h2>
-                <h2><a href="https://www.instagram.com/arnequinze/" target="_blank">Visit our<br>Instagram</a></h2>
-            </div>
-            <div class="instagram_recent">
-                <a href="https://www.instagram.com/p/CWqt3nNol1k" target="_blank">
-                    <div class="insta_img_container"
-                        style="background-image: url('static/img/instagram/insta_arne_quinze_1.jpg');">
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/p/CWoTmVKov8z" target="_blank">
-                    <div class="insta_img_container"
-                        style="background-image: url('static/img/instagram/insta_arne_quinze_2.jpg');">
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/p/CWla8ojorgu" target="_blank">
-                    <div class="insta_img_container"
-                        style="background-image: url('static/img/instagram/insta_arne_quinze_3.jpg');">
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/p/CWgkzjdoyTw" target="_blank">
-                    <div class="insta_img_container"
-                        style="background-image: url('static/img/instagram/insta_arne_quinze_4.jpg');">
-                    </div>
-                </a>
-                <a href="https://www.instagram.com/p/CWWBtN0Izvf" target="_blank">
-                    <div class="insta_img_container"
-                        style="background-image: url('static/img/instagram/insta_arne_quinze_5.jpg');">
-                    </div>
-                </a>
+            </form>
+            <div class="insta_flex flex">
+                <div class="instagram_text_box">
+                    <h2>Arne<br>Quinze</h2>
+                    <h2><a href="https://www.instagram.com/arnequinze/" target="_blank">Visit our<br>Instagram</a></h2>
+                </div>
+                <div class="instagram_recent">
+                    <a href="https://www.instagram.com/p/CWqt3nNol1k" target="_blank">
+                        <div class="insta_img_container"
+                            style="background-image: url('static/img/instagram/insta_arne_quinze_1.jpg');">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/CWoTmVKov8z" target="_blank">
+                        <div class="insta_img_container"
+                            style="background-image: url('static/img/instagram/insta_arne_quinze_2.jpg');">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/CWla8ojorgu" target="_blank">
+                        <div class="insta_img_container"
+                            style="background-image: url('static/img/instagram/insta_arne_quinze_3.jpg');">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/CWgkzjdoyTw" target="_blank">
+                        <div class="insta_img_container"
+                            style="background-image: url('static/img/instagram/insta_arne_quinze_4.jpg');">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/CWWBtN0Izvf" target="_blank">
+                        <div class="insta_img_container"
+                            style="background-image: url('static/img/instagram/insta_arne_quinze_5.jpg');">
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="footer_row">
                 <p>© Arne Quinze, all rights reserved</p>
@@ -171,6 +184,10 @@
             </div>
         </footer>
     </div>
+    <script src="data/art.js"></script>
+    <script src="data/atelier.js"></script>
+    <script src="data/press.js"></script>
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>
